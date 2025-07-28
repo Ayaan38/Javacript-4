@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction to objects in javascript</title>
+    </head>
+    <body>
+        <h2>Javascript objects and properties</h2>
+        <p id="demo"></p>
+        <script>
+            var person = {
+                firstName: "Ayaan",
+                age : 16,
+            };
+            document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old.";
+        </script>
+         <h2>Javascript math object and methods</h2>
+         <script type="text/javascript">
+            var value= Math.abs(200);
+            document.write("Demo test value: " + value + "<br>");
+            var value= Math.acos(-1);
+            document.write("Demo test value1: " + value + "<br>");
+            var value= Math.asin(1);
+            document.write("Demo test value2: " + value + "<br>");
+            var value= Math.atan(.5);
+            document.write("Demo test value3: " + value + "<br>");
+            </script>
+            <p id="demo45"></p>
+        <script>
+            var person = {
+                firstName: "Ayaan", age : 16, favouriteColor : "blue", favouritePlayer : "Messi" };
+            document.getElementById("demo45").innerHTML = person.firstName + " is " + person.age + " years old." + " His favourite color is " + person.favouriteColor + " and his favourite player is " + person.favouritePlayer + ".";
+    </script>
+    <h2>Javascript Arguments</h2>
+    <p id="result"></p>
+    <script>
+        function findMax() {
+            var i;
+            var max=0;
+            for (i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("result").innerHTML = findMax(4,5,6);
+    </script>
+        </body>
+</html> 
